@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fafafa;
+  color: #98a2ad;
+  font-size: .85rem;
+  font-family: 'Merriweather', serif; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  direction: rtl;
+  font-style: italic;
+  font-family: 'Marriweather', serif; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  direction: rtl;
+  font-style: italic;
+  font-family: 'Marriweather', serif; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ but I'm not sure about working */
+  direction: rtl;
+  font-style: italic;
+  font-family: 'Marriweather', serif; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  direction: rtl;
+  font-style: italic;
+  font-family: 'Marriweather', serif; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.ta-c {
+  text-align: center; }
+
+.dis-block {
+  display: block; }
+
+.content-wrapper {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.field-wrapper {
+  display: block;
+  margin-bottom: 1rem; }
+
+.field-header {
+  color: #313c46; }
+
+footer {
+  text-align: center;
+  margin-bottom: 2rem; }
+  footer .copyright-info {
+    font-size: .75rem;
+    font-style: italic; }
+
+header.branding {
+  padding: 1.3rem 0;
+  background: #57b9b3; }
+  header.branding h1.page-title {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 300; }
+
+main.main-content {
+  padding: 60px 20px 10px; }
+  main.main-content section.form-header {
+    border-bottom: 5px solid #313c46;
+    padding-bottom: 1rem;
+    margin-bottom: .25rem; }
+    main.main-content section.form-header h2.section-header {
+      color: #313c46;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 .5rem; }
+    main.main-content section.form-header p.section-subheader {
+      color: #98a2ad;
+      font-size: .85rem; }
+  main.main-content section.form-body fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 1rem; }
+    main.main-content section.form-body fieldset legend {
+      font-weight: 600;
+      padding: 1.5rem 0;
+      display: block;
+      width: 100%;
+      border-top: 1px solid #313c46; }
+  main.main-content section.form-body label {
+    font-size: .85rem;
+    margin-bottom: .75rem;
+    color: #98a2ad; }
+    main.main-content section.form-body label.field-desc {
+      margin-top: .75rem; }
+      main.main-content section.form-body label.field-desc:nth-child(2) {
+        margin-top: 0; }
+  main.main-content section.form-body input[type="text"],
+  main.main-content section.form-body input[type="tel"],
+  main.main-content section.form-body textarea,
+  main.main-content section.form-body select {
+    padding: 0 .85rem;
+    font-size: .85rem;
+    color: #98a2ad;
+    background-color: #efeff0;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    display: block;
+    height: 2.8rem;
+    margin-bottom: .75rem;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+    main.main-content section.form-body input[type="text"]#zip,
+    main.main-content section.form-body input[type="tel"]#zip,
+    main.main-content section.form-body textarea#zip,
+    main.main-content section.form-body select#zip {
+      width: initial; }
+    main.main-content section.form-body input[type="text"]:focus,
+    main.main-content section.form-body input[type="tel"]:focus,
+    main.main-content section.form-body textarea:focus,
+    main.main-content section.form-body select:focus {
+      border-color: #313c46;
+      outline: none; }
+  main.main-content section.form-body input[type="checkbox"],
+  main.main-content section.form-body input[type="radio"] {
+    margin: 0 10px 0 0; }
+    main.main-content section.form-body input[type="checkbox"]::checked,
+    main.main-content section.form-body input[type="radio"]::checked {
+      border-color: #313c46; }
+  main.main-content section.form-body textarea {
+    min-height: 6rem;
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 2rem; }
+
+#signup-form input[type="checkbox"],
+#signup-form input[type="radio"] {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  cursor: default;
+  position: relative;
+  transition: all 100ms ease;
+  border-radius: 3px;
+  box-shadow: 0px 0px 0px 2px #eeeff0;
+  background-color: #eeeff0; }
+  #signup-form input[type="checkbox"]:focus,
+  #signup-form input[type="radio"]:focus {
+    outline: none; }
+  #signup-form input[type="checkbox"]:checked,
+  #signup-form input[type="radio"]:checked {
+    box-shadow: 0px 0px 0px 2px #476a8a; }
+  #signup-form input[type="checkbox"]:before, #signup-form input[type="checkbox"]:checked:before,
+  #signup-form input[type="radio"]:before,
+  #signup-form input[type="radio"]:checked:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    content: ''; }
+
+#signup-form input[type="radio"] {
+  border-radius: 50px; }
+
+#signup-form input[type="checkbox"]:checked:before {
+  content: '\2713';
+  color: #476a8a;
+  font-size: 10px; }
+
+#signup-form input[type="radio"]:checked:before {
+  content: '';
+  background-color: #476a8a;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 2px; }
+
+button {
+  font-family: 'Merriweather', serif;
+  background-color: #57b9b3;
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  font-size: .85rem;
+  padding: 1rem 0; }
+
+.contact-info input {
+  width: 100%;
+  display: inline-block;
+  float: left; }
+
+.contact-info label {
+  width: 100%;
+  display: inline-block;
+  float: left; }
+
+.contact-info select {
+  width: 100%;
+  display: inline-block;
+  float: left; }
+
+@media (min-width: 769px) {
+  .contact-info input {
+    width: 75%;
+    display: inline-block;
+    float: left; }
+  .contact-info label {
+    line-height: 3;
+    width: 25%;
+    display: inline-block;
+    float: left; }
+  .contact-info select {
+    width: 75%;
+    display: inline-block;
+    float: left; } }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Responsive Registration Form</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="branding">
+      <h1 class="page-title text-uppercase ta-c">The Code Review</h1>
+    </header>
+
+    <div class="content-wrapper">
+
+      <main class="main-content">
+
+        <section class="form-header">
+          <h2 class="section-header ta-c">Signup for our newsletter</h2>
+          <p class="section-subheader ta-c text-light">Get the latest news on how your code is doing right in your inbox</p>
+        </section>
+
+        <section class="form-body">
+          <form id="signup-form">
+            <fieldset class="contact-info">
+              <legend class="field-header">
+                Contact Information
+              </legend>
+
+              <label class="dis-block" for="name">Full Name</label>
+              <input type="text" id="name" name="user_name" placeholder="Required" required>
+
+              <label class="dis-block" for="email">Email Address</label>
+              <input type="text" id="email" name="user_email" placeholder="Required" required>
+
+              <label class="dis-block" for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="user_phone" placeholder="(222) 333-555">
+
+              <label class="dis-block" for="street-address">Street Address</label>
+              <input type="text" id="street-address" name="user_street" placeholder="123 Lane Street Drive">
+
+              <label class="dis-block" for="city">City</label>
+              <input type="text" id="city" name="user_city" placeholder="City USA">
+
+              <label class="dis-block" for="state">State</label>
+              <select id="state" name="user_state">
+                <option value="" disabled selected>Choose State</option>
+                <option value="fl">Florida</option>
+                <option value="nv">Nevada</option>
+              </select>
+
+              <label class="dis-block" for="zip">Zip Code</label>
+              <input type="text" id="zip" name="user_zip" placeholder="32456">
+
+
+            </fieldset>
+            <fieldset class="newsletter-signup">
+              <legend class="field-header">
+                Newsletter
+              </legend>
+
+              <label class="field-desc dis-block">Select the newsletter you would like to receive</label>
+
+              <div class="field-wrapper"><input type="checkbox" id="html-news" name="newsletter-type" value="html_news" checked><label for="html-news">HTML News</label></div>
+
+              <div class="field-wrapper"><input type="checkbox" id="css-news" name="newsletter-type" value="css_news"><label for="css-news">CSS News</label></div>
+
+              <div class="field-wrapper"><input type="checkbox" id="javascript-news" name="newsletter-type" value="javascript_news"><label for="javascript-news">Javascript News</label></div>
+
+              <label class="field-desc dis-block">Newsletter Format</label>
+
+              <div class="field-wrapper"><input type="radio" id="html-format" name="newsletter-format" value="html_format" checked><label for="html-format">HTML</label></div>
+
+              <div class="field-wrapper"><input type="radio" id="text-format" name="newsletter-format" value="text_format"><label for="text-format">Plain Text</label></div>
+
+              <label class="field-desc dis-block" for="comments-block">Other topics you'd like to hear about</label>
+
+              <textarea name="comments-block" id="comments-block"></textarea>
+
+              <button type="submit">Sign Up</button>
+
+            </fieldset>
+          </form>
+        </section>
+
+      </main>
+    </div>
+    <div class="content-wrapper">
+      <footer>
+        <p class="copyright-info">Copyright The Code Review</p>
+      </footer>
+    </div>
+
+  </body>
+</html>
