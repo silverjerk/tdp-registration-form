@@ -118,6 +118,7 @@ main.main-content {
       padding:0;
       margin:0 0 1rem;
       legend {
+        font-size:1rem;
         font-weight:600;
         padding:1.5rem 0;
         display:block;
@@ -136,8 +137,21 @@ main.main-content {
         }
       }
     }
+    h4 {
+      font-weight:400;
+      font-size:.85rem;
+      margin-bottom:.75rem;
+      color:$light-blue;
+      &.field-desc {
+        margin-top:.75rem;
+        &:nth-child(2) {
+          margin-top:0;
+        }
+      }
+    }
     input[type="text"],
     input[type="tel"],
+    input[type="email"],
     textarea,
     select {
       padding:0 .85rem;
@@ -229,7 +243,7 @@ main.main-content {
  margin:2px;
 }
 
-button {
+input[type="submit"] {
   font-family: 'Merriweather', serif;
   background-color:#57b9b3;
   display:block;

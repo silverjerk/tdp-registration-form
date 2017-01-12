@@ -92,6 +92,7 @@ main.main-content {
     padding: 0;
     margin: 0 0 1rem; }
     main.main-content section.form-body fieldset legend {
+      font-size: 1rem;
       font-weight: 600;
       padding: 1.5rem 0;
       display: block;
@@ -105,8 +106,18 @@ main.main-content {
       margin-top: .75rem; }
       main.main-content section.form-body label.field-desc:nth-child(2) {
         margin-top: 0; }
+  main.main-content section.form-body h4 {
+    font-weight: 400;
+    font-size: .85rem;
+    margin-bottom: .75rem;
+    color: #98a2ad; }
+    main.main-content section.form-body h4.field-desc {
+      margin-top: .75rem; }
+      main.main-content section.form-body h4.field-desc:nth-child(2) {
+        margin-top: 0; }
   main.main-content section.form-body input[type="text"],
   main.main-content section.form-body input[type="tel"],
+  main.main-content section.form-body input[type="email"],
   main.main-content section.form-body textarea,
   main.main-content section.form-body select {
     padding: 0 .85rem;
@@ -124,11 +135,13 @@ main.main-content {
     transition: all 300ms ease-in-out; }
     main.main-content section.form-body input[type="text"]#zip,
     main.main-content section.form-body input[type="tel"]#zip,
+    main.main-content section.form-body input[type="email"]#zip,
     main.main-content section.form-body textarea#zip,
     main.main-content section.form-body select#zip {
       width: initial; }
     main.main-content section.form-body input[type="text"]:focus,
     main.main-content section.form-body input[type="tel"]:focus,
+    main.main-content section.form-body input[type="email"]:focus,
     main.main-content section.form-body textarea:focus,
     main.main-content section.form-body select:focus {
       border-color: #313c46;
@@ -191,7 +204,7 @@ main.main-content {
   border-radius: 50%;
   margin: 2px; }
 
-button {
+input[type="submit"] {
   font-family: 'Merriweather', serif;
   background-color: #57b9b3;
   display: block;
